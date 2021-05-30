@@ -1,0 +1,128 @@
+﻿      
+        ul
+{
+list-style-type:none;
+margin:0;
+padding:0;
+overflow:hidden;
+            width: 1108px;
+            height: 38px;
+        }
+li
+{
+float:left;
+            width: 117px;
+            height: 22px;
+        }
+a
+{
+    text-decoration:none;
+display:block;
+padding:0 0 0 0px;
+            height: 19px;
+            width: 117px;
+        }
+a:hover
+{
+color:white;
+background-color:#C648D9;
+}
+.headdiv li
+{
+    position:relative;
+            top: 0px;
+            left: 0px;
+        }
+
+.headdiv
+{
+margin :0 0 0 0px;
+border:2px solid #a1a1a1;
+padding:10px 40px; 
+background-color:#0FF8D5;
+
+width:90%;
+-moz-border-radius: 25px;
+-webkit-border-radius: 25px;
+width:1057px;
+            height: 24px;
+            position:relative;
+        }
+        .highlight
+{
+    background-color:Gray;
+    color:White;    
+}
+.home_body
+{
+    background-color:#8A83EC;
+            width: 1238px;
+        }
+
+
+.content_div
+{         
+
+    width:1200px;   
+    height: 457px;
+    background-color:White;
+    margin-top:20px;
+    margin-left:10px;
+    margin-right:10px;
+    margin-bottom:27px;
+    overflow:auto;
+        }
+        ul
+        {
+            margin-left:0px;
+        }
+        .footer
+        {
+bottom: 0;
+height: 35px;
+width: 100%;
+border-top: 1px solid #F02C2C;
+background-color:#777;
+overflow: hidden;
+        }
+       .footerul
+        {
+            float:right;
+            width:290px;
+        }
+        .srvlist:hover .sub
+        {
+            visibility:visible;
+
+        }
+        .sub
+        {
+            visibility:hidden;
+
+        }
+        .headdiv li ul
+        {
+           
+            top: 19px;
+            left: 3px;
+        }       
+        .Inactive {
+            height: 26px;
+            display:none;            
+           position:absolute;
+           width:128px;
+           background-color:#0FF8D5;
+        }
+#questions:hover .Inactive
+{
+    display:block;
+
+}
+
+#admindetails:hover .Inactive
+{
+    display:block;
+
+}
+       
+    

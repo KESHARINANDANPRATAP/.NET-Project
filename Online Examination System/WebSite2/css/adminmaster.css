@@ -1,0 +1,131 @@
+﻿   
+
+        ul
+{
+list-style-type:none;
+margin:0;
+padding:0;
+overflow:hidden;
+            width: 886px;
+            height: 24px;
+        }
+li
+{
+float:left;
+            width: 126px;
+        }
+        
+        
+a
+{
+display:block;
+width:126px;
+padding:1 1 1 1px;
+text-decoration:none;
+            }
+a:hover
+{
+color:white;
+background-color:#C648D9;
+}
+.headdiv
+{
+margin :0 0 0 30px;
+border:2px solid #a1a1a1;
+padding:10px 40px; 
+background-color:#E9F9B0;
+width:869px;
+            height: 18px;
+        }
+.home_body
+{
+    background-color:#EDB0F9;
+            width: 1257px;
+        }
+.txt
+{
+    overflow:scroll;
+}
+
+
+.highlight
+{
+    background-color:Gray;
+    color:White;    
+}
+
+.content_div
+{   
+    width:1200px;         
+    height: 431px;
+    background-color:White;
+    margin-top:20px;
+    margin-left:10px;
+    margin-right:10px;
+    margin-bottom:50px;
+    overflow:auto;
+    position:relative;
+    
+        }
+
+
+table.gridtable {
+	font-family: verdana,arial,sans-serif;
+	font-size:11px;
+	color:#333333;
+	border-color: #666666;
+      
+	
+	border-collapse: collapse;
+	margin:20px 20px;
+}
+.Inactive
+{
+    display:none;
+    position:absolute;
+    background:#E9F9B0;
+     width:126px;
+}
+#questions:hover .Inactive
+{
+    display:block;
+
+}
+table.gridtable td {
+	padding: 8px;
+	overflow:auto;
+	border-color: #666666;
+	margin:30 30 30 30px
+}
+        .style1
+        {
+            width: 803px;
+        }
+        .style2
+        {
+            width: 150px;
+        }
+       
+        .style3
+        {
+            width: 150px;
+            height: 42px;
+        }
+      
+    .footer
+        {
+bottom: 0;
+height: 35px;
+width: 1250px;
+border-top: 1px solid #F02C2C;
+background-color:#777;
+overflow: hidden;
+        }
+       li .active
+        {
+            background-color:Red;
+        }
+      .quest
+      {
+          background-color:Red;
+      }

@@ -1,0 +1,105 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="super.master.cs" Inherits="super" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head id="Head1" runat="server">
+    <title>Super Admin</title>
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon" />
+    <link rel="Stylesheet" href="css/superadminmaster.css" type="text/css" />
+    <script language="javascript" type="text/javascript">
+
+        function changebackcolor(id) {
+            if (id == "questions") {
+                document.getElementById('questions').className = "highlight";
+            }
+            else if (id == "sendmail") {
+
+                document.getElementById('sendmail').className = "highlight";
+            }
+            else if (id == "exampattern") {
+                document.getElementById('exampattern').className = "highlight";
+            }
+            else if (id == "changepwd") {
+                document.getElementById('changepwd').className = "highlight";
+            }
+            else if (id == "studentmarks") {
+                document.getElementById('studentmarks').className = "highlight";
+            }
+            else if (id == "admindetails") {
+                document.getElementById('admindetails').className = "highlight";
+            }
+            else if (id == "addadmin") {
+                document.getElementById('addadmin').className = "highlight";
+            }
+            else if (id == "home") {
+                document.getElementById('home').className = "highlight";
+            }
+            else if (id == "students") {
+                document.getElementById('students').className = "highlight";
+            }
+
+        }
+    </script>
+</head>
+<body class="home_body">
+    <form id="form1" runat="server">
+        <div id="home_head">
+            <p>
+                <asp:ScriptManager ID="ScriptManager1" runat="server">
+                </asp:ScriptManager>
+            </p>
+            <p style="float: right; margin-right: 20px;">
+                <asp:LinkButton ID="btnlink" runat="server" OnClick="btnlink_Click" Width="60px" ToolTip="Sign Out">Sign Out</asp:LinkButton></p>
+
+
+            <p style="float: right; margin-right: 20px;">
+                <asp:Label ID="lblUserName" runat="server" Text="Label"></asp:Label></p>
+            <h1 style="text-align: center; width: 1000px" title=" Online Examination System"> Online Examination System </h1>
+
+            <center>
+                <div class="headdiv">
+                    <ul>
+                        <li id="home"><a href="Home.aspx" title="Home Page" accesskey="1">Home</a></li>
+                        <li id="addadmin"><a href="adminregister.aspx" title="Add New Admins" accesskey="2">Add Admins</a></li>
+                        <li id="admindetails"><a href="Admindetails.aspx?Activeadmin=Activeadmin" title="Admin Details" accesskey="3">Admin Details</a>
+                            <div class="Inactive">
+                                <ul>
+                                    <li class="active"><a href="Admindetails.aspx?Inactiveadmin=Inactiveadmin">Inactive Admins</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li id="questions"><a href="AddQuestions.aspx" title="Adding Questions" accesskey="4">Add Questions</a>
+                            <div class="Inactive">
+                                <ul>
+                                    <li class="active"><a href="AddQuestions.aspx?Inactive=Inactive">InactveQuestions</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li id="exampattern"><a href="ExamPattern.aspx" title="Set Exam Pattern" accesskey="5">Exam Pattern </a></li>
+                        <li id="studentmarks"><a href="studentresults.aspx" title="Student Exam Paper" accesskey="6">Student Paper </a></li>
+                        <li id="students"><a href="students.aspx" title="View All Students" accesskey="7">Students Details</a></li>
+
+                        <li id="sendmail"><a href="sendingstatus.aspx" title="Sending Mails To Students" accesskey="8">Send Mails</a> </li>
+                        <li id="changepwd"><a href="changepwd.aspx" title="Change Password" accesskey="9">My Profile</a></li>
+                    </ul>
+                </div>
+            </center>
+        </div>
+
+
+        <div class="content_div">
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+            </asp:ContentPlaceHolder>
+        </div>
+
+    </form>
+    <div class="footer">
+        <center>Copyright © 2015</center>
+
+
+    </div>
+</body>
+
+</html>
+
+

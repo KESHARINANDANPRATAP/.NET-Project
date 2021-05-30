@@ -1,0 +1,89 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="user.master.cs" Inherits="use" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head id="Head1" runat="server">
+    <link rel="Shortcut Icon" href="images/favicon.ico" />
+
+
+
+    <title>Write Exam</title>
+    <style type="text/css">
+        ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            width: 286px;
+            height: 22px;
+        }
+
+        li {
+            float: left;
+        }
+
+        a {
+            display: block;
+            width: 85px;
+            padding: 1 1 1 1px;
+        }
+
+            a:hover {
+                color: white;
+                background-color: #C648D9;
+            }
+
+        .headdiv {
+            margin: 0 0 0 30px;
+            border: 2px solid #a1a1a1;
+            padding: 10px 40px;
+            background-color: #0FF8D5;
+            /*width:450px;*/
+            width: 100%;
+            -moz-border-radius: 25px;
+            -webkit-border-radius: 25px;
+        }
+
+        .home_body {
+            background-color: #8A83EC;
+        }
+
+        .content_div {
+            height: 508px;
+            background-color: White;
+            margin-top: 20px;
+            margin-left: 10px;
+            margin-right: 10px;
+            margin-bottom: 50px;
+            overflow: auto;
+        }
+
+        #home_head {
+            width: 775px;
+            margin-left: 27px;
+        }
+    </style>
+
+
+</head>
+<body class="home_body" onkeydown="return (event.keyCode != 116)">
+    <form id="form1" runat="server">
+
+        <p>
+            <asp:ScriptManager ID="ScriptManager1" runat="server">
+            </asp:ScriptManager>
+        </p>
+        <div id="home_head">
+
+            <center>
+                <h1>Online Examination System </h1>
+            </center>
+        </div>
+        <div class="content_div">
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+            </asp:ContentPlaceHolder>
+        </div>
+    </form>
+    <div style="color: #444; background: #777; border-top: 7px solid #000; clear: both; padding: 15px; margin-top: 10px;">Copyright © 2015</div>
+</body>
+</html>
